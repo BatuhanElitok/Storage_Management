@@ -1,0 +1,11 @@
++---------+------------------+---------------------------+-------------------------+--------------+-------------------------------------+
+|   Name  | Date_of_purchase |          Name_of_Supplier | Storage_expiration_date | Storage_code |             Description             |
++---------+------------------+---------------------------+-------------------------+--------------+-------------------------------------+
+|   Wood  | 12/1/22          |            Lumberjack Co. |         1/12/24         |     178      |       Wood from Lumberjack Co.      |
+|   Wood  | 12/6/22          |            Lumberjack Co. |         12/30/22        |     168      |       Wood from Lumberjack Co.      |
+|   Iron  | 12/21/22         |                   Con Co. |         3/23/23         |     145      |          Iron from Con Co.          |
+|   Gold  | 12/8/22          | International Jewelry Co. |         12/27/24        |     012      | Gold from International Jewelry Co. |
+|   Wood  | 9/8/22           |            Lumberjack Co. |         7/21/23         |     147      |       Wood from Lumberjack Co.      |
+|  Cotton | 12/7/22          |      National Farmers Co. |         12/25/26        |     1112     |   Cotton from National Farmers Co.  |
+| Diamond | 12/7/22          |       National Miners Co. |         12/15/22        |     112      |   Diamond from National Miners Co.  |
++---------+------------------+---------------------------+-------------------------+--------------+-------------------------------------+
