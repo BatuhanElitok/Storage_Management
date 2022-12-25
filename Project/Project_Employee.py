@@ -1,5 +1,6 @@
 from tkinter import *
 from sqlite3 import *
+from tkinter import messagebox
 
 class Employee_add_to_DB():
         
@@ -88,6 +89,7 @@ class Employee_add_to_DB():
                 cursor.execute(inserter, data_raw)
                 db.commit()
                 cursor.close()
+                messagebox.showinfo("Feedback",  add_page.FullName_Entry.get()+" added to Employee database")
             
             def remove_db():
                 db = connect("Project_Database.db")
@@ -96,6 +98,7 @@ class Employee_add_to_DB():
                 db.execute(deleter)
                 db.commit()
                 cursor.close()
+                messagebox.showinfo("Feedback",  add_page.FullName_Entry.get()+" has removed from Employee database")
             # <- FUNCS End Point
             #---------------------------------
             # <- Buttons Start Point

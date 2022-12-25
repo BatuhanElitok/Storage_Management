@@ -151,19 +151,19 @@ class Visualize:
         #---------------------------------
         # <- Buttons Start Point
         
-        main_page.img_button_Raw = Button(main_page, text= "Image", font=("Arial", 17), bg = "#e3dac9", command = show_raw_material)
+        main_page.img_button_Raw = Button(main_page, text= "Image", font=("Arial", 17),  command = show_raw_material)
         main_page.img_button_Raw.place(x = 350, y = 25, height=30)
         
-        main_page.img_button_Product = Button(main_page, text= "Image", font=("Arial", 17), bg = "#e3dac9", command = show_product)
+        main_page.img_button_Product = Button(main_page, text= "Image", font=("Arial", 17),  command = show_product)
         main_page.img_button_Product.place(x = 350, y = 75, height=30)
         
-        main_page.img_button_Cam = Button(main_page, text= "STRORAGE CAM", font=("Arial", 17), bg = "#e3dac9", command = show_cam)
+        main_page.img_button_Cam = Button(main_page, text= "STRORAGE CAM", font=("Arial", 17),  command = show_cam)
         main_page.img_button_Cam.place(x = 25, y = 125, height=35,width= 450)
         
-        main_page.img_button_Raw_Report = Button(main_page, text= "Raw Material Report", font=("Arial", 17), bg = "#e3dac9", command = Raw_Material_Report)
+        main_page.img_button_Raw_Report = Button(main_page, text= "Raw Material Report", font=("Arial", 17),  command = Raw_Material_Report)
         main_page.img_button_Raw_Report.place(x = 25, y = 175, height=35,width= 450)
         
-        main_page.img_button_Product_Report = Button(main_page, text= "Product Report", font=("Arial", 17), bg = "#e3dac9", command = Product_Report)
+        main_page.img_button_Product_Report = Button(main_page, text= "Product Report", font=("Arial", 17),  command = Product_Report)
         main_page.img_button_Product_Report.place(x = 25, y = 225, height=35,width= 450)
         
         

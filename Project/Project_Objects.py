@@ -2,7 +2,7 @@ from Project_Classes import *
 from tkinter import *
 from tkcalendar import DateEntry
 from sqlite3 import *
-
+from tkinter import messagebox
 class Raw_add_to_DB():
         
         def __init__(self, add_page):
@@ -90,14 +90,16 @@ class Raw_add_to_DB():
                 cursor.execute(inserter, data_raw)
                 db.commit()
                 cursor.close()
+                messagebox.showinfo("Feedback",  add_page.Name_Entry.get()+" added to Raw Materials database")
             
             def remove_db():
                 db = connect("Project_Database.db")
                 cursor = db.execute("""SELECT * FROM Raw_Materials""")
-                deleter = '''DELETE FROM Employee WHERE Name = "'''+add_page.Name_Entry.get()+'''" AND Date_of_purchase = '''+add_page.Date_of_purchase_Enrty.get()+''' AND Name_of_Supplier = "'''+add_page.Name_of_Supplier_Entry.get()+'''" AND Storage_expiration_date = '''+ add_page.Storage_expiration_date_Enrty.get() + ''' AND   Description =  "'''+add_page.Description_Entry.get()+'''"'''
+                deleter = '''DELETE FROM Raw_Materials WHERE Name = "'''+add_page.Name_Entry.get()+'''" AND Date_of_purchase = "'''+add_page.Date_of_purchase_Enrty.get()+'''" AND Name_of_Supplier = "'''+add_page.Name_of_Supplier_Entry.get()+'''" AND Storage_expiration_date = "'''+ add_page.Storage_expiration_date_Enrty.get() + '''" AND   Description =  "'''+add_page.Description_Entry.get()+'''"'''
                 db.execute(deleter)
                 db.commit()
                 cursor.close()
+                messagebox.showinfo("Feedback",  add_page.Name_Entry.get()+" has removed from Raw Materials database")
                     
             # <- FUNCS End Point
             #---------------------------------
@@ -207,14 +209,16 @@ class Product_add_to_DB():
                 cursor.execute(inserter, data_raw)
                 db.commit()
                 cursor.close()
+                messagebox.showinfo("Feedback",  add_page.Name_Entry.get()+" added to Products database")
             
             def remove_db():
                 db = connect("Project_Database.db")
-                cursor = db.execute("""SELECT * FROM Prodcuts""")
-                deleter = '''DELETE FROM Employee WHERE Name = "'''+add_page.Name_Entry.get()+'''" AND Date_of_Production = '''+add_page.Date_of_Production_Enrty.get()+''' AND Name_of_Customer = "'''+add_page.Name_of_Customer_Entry.get()+'''" AND Product_expiration_date = '''+ add_page.Product_expiration_date_Enrty.get() + ''' AND list_of_raw_used = "'''+ add_page.list_of_raw_used_Entry.get()+'''" AND   Description =  "'''+add_page.Description_Entry.get()+'''"'''
+                cursor = db.execute("""SELECT * FROM Products""")
+                deleter = '''DELETE FROM Products WHERE Name = "'''+add_page.Name_Entry.get()+'''" AND Date_of_Production = "'''+add_page.Date_of_Production_Enrty.get()+'''" AND Name_of_Customer = "'''+add_page.Name_of_Customer_Entry.get()+'''" AND Product_expiration_date = "'''+ add_page.Product_expiration_date_Enrty.get() + '''" AND list_of_raw_used = "'''+ add_page.list_of_raw_used_Entry.get()+'''" AND   Description =  "'''+add_page.Description_Entry.get()+'''"'''
                 db.execute(deleter)
                 db.commit()
                 cursor.close()
+                messagebox.showinfo("Feedback",  add_page.Name_Entry.get()+" has removed from Products database")
                     
             # <- FUNCS End Point
             #---------------------------------

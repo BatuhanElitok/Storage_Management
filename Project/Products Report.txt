@@ -1,7 +1,9 @@
-+-----------------+--------------------+------------------+-------------------------+--------------+------------------+-----------------------+
-|       Name      | Date_of_Production | Name_of_Customer | Product_expiration_date | Storage_code | list_of_raw_used |      Description      |
-+-----------------+--------------------+------------------+-------------------------+--------------+------------------+-----------------------+
-| Golden Necklace | 12/21/22           |       Ayþe Özcan |         2/24/23         |     144      |       Gold       |   A golden necklace   |
-|      Chair      | 12/21/22           |      Can Mobilya |         1/19/23         |     129      |       Wood       | Chair for Can Mobilya |
-|     T-Shirt     | 12/5/22            |         Ertuðrul |          1/7/23         |     156      |      Cotton      |  T-Shirt for Ertuðrul |
-+-----------------+--------------------+------------------+-------------------------+--------------+------------------+-----------------------+
++-----------------+--------------------+--------------------+-------------------------+--------------+------------------+---------------------------------+
+|       Name      | Date_of_Production |   Name_of_Customer | Product_expiration_date | Storage_code | list_of_raw_used |           Description           |
++-----------------+--------------------+--------------------+-------------------------+--------------+------------------+---------------------------------+
+| Golden Necklace | 12/21/22           |         Ayþe Özcan |         2/24/23         |     144      |       Gold       |        A golden necklace        |
+|      Chair      | 12/21/22           |        Can Mobilya |         1/19/23         |     129      |       Wood       |      Chair for Can Mobilya      |
+|     T-Shirt     | 12/5/22            |           Ertuðrul |          1/7/23         |     156      |      Cotton      |       T-Shirt for Ertuðrul      |
+|       Ring      | 12/6/22            |        Jewelry Co. |         12/16/22        |     112      |  Gold, Diamond   |  Diamond ring for Jewelry Co.   |
+|    Rail Track   | 12/6/22            | SpeedTrain Railway |         12/25/26        |     1456     |    Iron, Wood    | Railroad for SpeedTrain Railway |
++-----------------+--------------------+--------------------+-------------------------+--------------+------------------+---------------------------------+

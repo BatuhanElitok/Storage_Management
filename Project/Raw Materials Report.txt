@@ -8,4 +8,5 @@
 |   Wood  | 9/8/22           |            Lumberjack Co. |         7/21/23         |     147      |       Wood from Lumberjack Co.      |
 |  Cotton | 12/7/22          |      National Farmers Co. |         12/25/26        |     1112     |   Cotton from National Farmers Co.  |
 | Diamond | 12/7/22          |       National Miners Co. |         12/15/22        |     112      |   Diamond from National Miners Co.  |
+|  Cotton | 12/26/22         |      National Farmers Co. |         12/28/22        |     1112     |   Cotton from National Farmers Co.  |
 +---------+------------------+---------------------------+-------------------------+--------------+-------------------------------------+
