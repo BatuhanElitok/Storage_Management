@@ -1,4 +1,4 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class RawMaterials(ABC):
@@ -11,7 +11,7 @@ class RawMaterials(ABC):
         self.Description = Description
 
     #   Setters
-
+    @abstractmethod
     def set_Name(self, Name):
         self.Name = Name
 
@@ -23,15 +23,17 @@ class RawMaterials(ABC):
 
     def set_Storage_expiration_date(self, Storage_expiration_date):
         self.Storage_expiration_date = Storage_expiration_date
-
+        
+    @abstractmethod
     def set_Storage_code(self, Storage_code):
         self.Storage_code = Storage_code
-
+        
+    @abstractmethod
     def set_Description(self, Description):
         self.Description = Description
 
     #   Getters
-
+    @abstractmethod
     def get_Name(self):
         return self.Name
 
@@ -43,15 +45,17 @@ class RawMaterials(ABC):
 
     def get_Storage_expiration_date(self):
         return self.Storage_expiration_date
-
+    
+    @abstractmethod
     def get_Storage_code(self):
         return self.Storage_code
-
+    
+    @abstractmethod
     def get_Description(self):
         return self.Description
 
 
-class Products(RawMaterials, ABC):
+class Products(RawMaterials):
     def __init__(self, Name, Date_of_Production, Name_of_Customer, Product_expiration_date, Storage_code, list_of_raw_used, Description):
         self.Name = Name
         self.Date_of_Production = Date_of_Production
